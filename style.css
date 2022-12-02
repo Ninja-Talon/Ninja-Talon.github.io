@@ -1,0 +1,277 @@
+p {
+    word-break: break-word;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+}
+
+.static-txts-2{
+  color: #ffff;
+  margin-left: 23%;
+  margin-top: 11%;
+  line-height: 5.625rem;
+  font-size: 3.75rem;
+  position: fixed
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #343F4F;
+}
+
+.wrapper{
+  display: flex;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 29%;
+}
+.wrapper .static-txt{
+  color: #ffff;
+  margin-left: 0.938rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
+  overflow: hidden;
+  font-size: 3.75rem;
+  position: relative
+}
+.wrapper .dynamic-txts{
+  margin-left: 0.938rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: white;
+  font-size: 3.75rem;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -22.5rem;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 0rem 0;
+  line-height: 5.625rem;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 0.313rem;
+  height: 120%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 0.125rem solid red;
+  animation: typing 2s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 0rem);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+
+/* Galaxy Fold */
+@media only screen and (min-width: 0px) and (max-width: 359px) {
+
+body{
+  background: red;
+}
+}
+
+/* Samsung Galaxy S8+ */
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+
+  body{
+    background: blue;
+  }
+  }
+
+/* iPhone SE */
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+
+  body{
+    background: green;
+  }
+  }
+/* iPhone 12 Pro */
+@media only screen and (min-width: 390px) and (max-width: 392px) {
+
+  body{
+    background: yellow;
+  }
+  }
+/* Pixel 5 */
+@media only screen and (min-width: 393px) and (max-width: 411px) {
+
+  body{
+    background: orange;
+  }
+  }
+/* iPhone XR */
+@media only screen and (min-width: 414px) and (max-width: 539px) {
+
+  body{
+    background: purple;
+  }
+  }
+/* Surface Duo */
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+
+  body{
+    background: brown;
+  }
+  }
+/* iPad Mini */
+@media only screen and (min-width: 768px) and (max-width: 819px) {
+
+  body{
+    background: black;
+  }
+  }
+/* iPad Air */
+@media only screen and (min-width: 820px) and (max-width: 911px) {
+
+  body{
+    background: violet;
+  }
+  }
+/* Surface Pro 7 */
+@media only screen and (min-width: 912px) and (max-width: 1023px) {
+
+  body{
+    background: lightskyblue;
+  }
+  }
+/* Nest Hub */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+  body{
+    background: greenyellow;
+  }
+  }
+/* Nest Hub Max */
+@media only screen and (min-width: 1280px) and (max-width: 10000px) {
+
+  body{
+    background: navy;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Samsung Galaxy S20 Ultra or A51*/
+@media only screen and (min-width: 412px) and (max-width: 413px) {
+.static-txts-2{
+  color: #ffff;
+  font-size: 2.3rem;
+  position: unset
+}
+
+.wrapper{
+  display: flex;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 29%;
+}
+.wrapper .static-txt{
+  color: #ffff;
+  margin-left: 0.938rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
+  overflow: hidden;
+  font-size: 3.75rem;
+  position: relative
+}
+.wrapper .dynamic-txts{
+  margin-left: 0.938rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: white;
+  font-size: 3.75rem;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -22.5rem;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 0rem 0;
+  line-height: 5.625rem;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 0.313rem;
+  height: 120%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 0.125rem solid red;
+  animation: typing 2s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 0rem);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
